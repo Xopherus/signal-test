@@ -9,6 +9,7 @@ import (
 	"os/signal"
 	"strconv"
 	"syscall"
+	"time"
 
 	"github.com/joho/godotenv"
 	"github.com/zerofox-oss/go-msg"
@@ -108,12 +109,13 @@ func main() {
 			case syscall.SIGTERM:
 				// soft shutdown
 				log.Printf("[WARNING] SIGTERM issued, clean shutdown...")
-				ctx, cancelFunc := context.WithCancel(context.Background())
+				ctx, cancelFunc := context.WithTimeout(context.Background(), 5*time.Second)
 				defer cancelFunc()
 
-				if err := srv.Shutdown(ctx); err != nil {
-					log.Printf("[ERROR] shutdown failed: %v", err)
+				if err := srv.Shutdown(ctx); err != msg.ErrServerClosed {
+					log.Printf("[ERROR] %v", err)
 				}
+				log.Printf("[INFO] graceful shutdown")
 				os.Exit(0)
 
 			default:
