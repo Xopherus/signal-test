@@ -8,10 +8,8 @@ Instructions
 
 - Find process ID `ps aux | grep signal-test`
 
-- Issue SIGHUP to that process ID (`kill -SIGHUP pid`). Does the program start to faster? It should.
+- Issue SIGHUP to that process ID (`kill -SIGHUP pid`). Does the program start to work faster? It should.
 
-- Keep changing the RATELIMIT and watch as the program reloads without a full restart.
+- Keep changing the RATELIMIT and watch as the program reloads without a full process restart.
 
 - Issue SIGTERM to the process ID (`kill -SIGTERM pid`). The program should cleanly shutdown.
-
-
