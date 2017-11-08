@@ -1,0 +1,37 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "0cdNscA7+z4+lKF5usZYz3it/04=",
+			"path": "github.com/joho/godotenv",
+			"revision": "0f92a24bb0cd655270e0a559fbda13f92629510b",
+			"revisionTime": "2017-11-02T02:11:18Z"
+		},
+		{
+			"checksumSHA1": "Ylq7frl7tWpZ95EbCM8WpmsutpA=",
+			"path": "github.com/zerofox-oss/go-msg",
+			"revision": "545963ec6d4d027e6c1cd7fa10abb502bd73ec2e",
+			"revisionTime": "2017-10-21T20:42:46Z"
+		},
+		{
+			"checksumSHA1": "G9SHBhB8bFWGyN7DGiM5HrICpII=",
+			"path": "github.com/zerofox-oss/go-msg/mem",
+			"revision": "545963ec6d4d027e6c1cd7fa10abb502bd73ec2e",
+			"revisionTime": "2017-10-21T20:42:46Z"
+		},
+		{
+			"checksumSHA1": "+P60seGwRdRcqAQ9SjkLrwi3RVk=",
+			"path": "go.uber.org/ratelimit",
+			"revision": "d15fa2e2a63dd52104bc96d8ea7dc47ce8027de8",
+			"revisionTime": "2016-10-26T00:56:43Z"
+		},
+		{
+			"checksumSHA1": "l9iBFQQTgbyd8FkP62wvvsFBp+4=",
+			"path": "go.uber.org/ratelimit/internal/clock",
+			"revision": "d15fa2e2a63dd52104bc96d8ea7dc47ce8027de8",
+			"revisionTime": "2016-10-26T00:56:43Z"
+		}
+	],
+	"rootPath": "github.com/Xopherus/signal-test"
+}
